@@ -10,7 +10,8 @@ RUN \
 
 # Install gems
 RUN \
-  gem install -q --no-rdoc --no-ri --no-format-executable --no-user-install \
+  /root/.rbenv/shims/gem install \
+    -q --no-rdoc --no-ri --no-format-executable --no-user-install \
     berkshelf bundler busser busser-serverspec serverspec webmock rubocop \
     yaml-lint;
 
