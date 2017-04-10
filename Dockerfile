@@ -12,7 +12,7 @@ RUN \
 RUN \
   /root/.rbenv/shims/gem install \
     -q --no-rdoc --no-ri --no-format-executable --no-user-install \
-    berkshelf busser busser-serverspec serverspec webmock;
+    berkshelf busser busser-serverspec serverspec webmock librarian-puppet;
 
 # Mask failing services
 RUN \
