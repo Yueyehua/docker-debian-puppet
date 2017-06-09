@@ -10,7 +10,7 @@ RUN \
 
 # Install gems
 RUN \
-  /root/.rbenv/shims/gem install \
+  gem install \
     -q --no-rdoc --no-ri --no-format-executable --no-user-install \
     berkshelf busser busser-serverspec serverspec webmock librarian-puppet;
 
